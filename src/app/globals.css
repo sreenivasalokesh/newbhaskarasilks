@@ -57,10 +57,10 @@ img {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background:  rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid var(--border);
   z-index: 10;
-  backdrop-filter: blur(8px);
+  backdrop-filter: none;
 }
 
 .nav {
@@ -182,12 +182,13 @@ img {
 
 .nav-toggle {
   display: none;
-  border: 1px solid var(--border);
+  border: none;
   background: var(--card);
   border-radius: 10px;
   padding: 0.5rem;
   cursor: pointer;
-  align-self: flex-end;
+  align-self: center;
+  margin-top: 0.4rem;
 }
 
 .nav-icon,
@@ -635,17 +636,6 @@ img {
 
   .nav-links {
     display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 0.75rem;
-    padding-top: 0.5rem;
-    max-width: none;
-    justify-content: flex-start;
-  }
-
-  .nav-links.open {
-    display: flex;
   }
 
   .nav-toggle {
@@ -677,6 +667,90 @@ img {
   .button {
     width: 100%;
   }
+}
+
+.nav-drawer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+}
+
+.nav-drawer.open {
+  pointer-events: auto;
+}
+
+.nav-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(320px, 80vw);
+  height: 100%;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  padding: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  /* box-shadow: 12px 0 30px rgba(59, 47, 42, 0.2); */
+  align-content: start;
+}
+
+.nav-drawer.open .nav-panel {
+  transform: translateX(0);
+}
+
+.nav-close {
+  border: 1px solid var(--border);
+  background: var(--card);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  line-height: 1;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.drawer-brand {
+  justify-self: center;
+  margin-top: 0.5rem;
+  padding-bottom: 0.6rem;
+}
+
+.nav-drawer .nav-links.mobile {
+  display: grid;
+  gap: 3.1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--foreground);
+  text-transform: uppercase;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.nav-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.25);
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-drawer.open .nav-backdrop {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 @media (max-width: 480px) {
