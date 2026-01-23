@@ -1,66 +1,65 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import HeroCarousel from "@/components/HeroCarousel";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <HeroCarousel />
+      <section className="home-sections">
+        <article className="section-card">
+          <div
+            className="section-media gallery"
+            role="img"
+            aria-label="Gallery highlights"
+          />
+          <div className="section-content">
+            <p className="eyebrow">Gallery</p>
+            <h2>Signature designs and modern patterns.</h2>
+            <p className="lead">
+              Explore curated collections showcasing zari borders, soft
+              pastels, and rich festive palettes crafted for every occasion.
+            </p>
+            <a className="button ghost" href="/gallery">
+              View Gallery
+            </a>
+          </div>
+        </article>
+        <article className="section-card reverse">
+          <div
+            className="section-media about"
+            role="img"
+            aria-label="About Bhaskara Silks"
+          />
+          <div className="section-content">
+            <p className="eyebrow">About</p>
+            <h2>Rooted in tradition, focused on quality.</h2>
+            <p className="lead">
+              Learn about our heritage, quality standards, and the skilled
+              artisans who bring each weave to life.
+            </p>
+            <a className="button ghost" href="/about">
+              Read About Us
+            </a>
+          </div>
+        </article>
+        <article className="section-card">
+          <div
+            className="section-media contact"
+            role="img"
+            aria-label="Contact Bhaskara Silks"
+          />
+          <div className="section-content">
+            <p className="eyebrow">Contact</p>
+            <h2>Let’s create something timeless.</h2>
+            <p className="lead">
+              Reach out for orders, bulk inquiries, or custom saree
+              requirements tailored to your needs.
+            </p>
+            <a className="button ghost" href="/contact">
+              Contact Us
+            </a>
+          </div>
+        </article>
+      </section>
+    </>
   );
 }

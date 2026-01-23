@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f4ece2"/>
+      <stop offset="100%" stop-color="#e6d7c5"/>
+    </linearGradient>
+    <linearGradient id="loom" x1="0" x2="1">
+      <stop offset="0%" stop-color="#c9b9a4"/>
+      <stop offset="100%" stop-color="#b19f88"/>
+    </linearGradient>
+    <linearGradient id="fabric2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d1b89a"/>
+      <stop offset="100%" stop-color="#bfa383"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg2)"/>
+  <rect x="130" y="140" width="1140" height="620" rx="32" fill="#fdf7ee" stroke="#e1d3c2" stroke-width="6"/>
+  <rect x="210" y="250" width="980" height="230" rx="18" fill="url(#fabric2)"/>
+  <g stroke="#b79b78" stroke-width="4" opacity="0.5">
+    <line x1="230" y1="280" x2="1180" y2="280"/>
+    <line x1="230" y1="315" x2="1180" y2="315"/>
+    <line x1="230" y1="350" x2="1180" y2="350"/>
+    <line x1="230" y1="385" x2="1180" y2="385"/>
+    <line x1="230" y1="420" x2="1180" y2="420"/>
+  </g>
+  <rect x="210" y="520" width="980" height="110" rx="14" fill="url(#loom)"/>
+  <rect x="250" y="550" width="130" height="60" rx="8" fill="#b49a7c"/>
+  <rect x="1020" y="550" width="130" height="60" rx="8" fill="#b49a7c"/>
+  <rect x="320" y="660" width="760" height="48" rx="12" fill="#d3c1ab"/>
+  <g fill="#b59b7d" opacity="0.85">
+    <rect x="340" y="676" width="34" height="8" rx="4"/>
+    <rect x="410" y="676" width="34" height="8" rx="4"/>
+    <rect x="480" y="676" width="34" height="8" rx="4"/>
+    <rect x="550" y="676" width="34" height="8" rx="4"/>
+    <rect x="620" y="676" width="34" height="8" rx="4"/>
+    <rect x="690" y="676" width="34" height="8" rx="4"/>
+    <rect x="760" y="676" width="34" height="8" rx="4"/>
+    <rect x="830" y="676" width="34" height="8" rx="4"/>
+    <rect x="900" y="676" width="34" height="8" rx="4"/>
+  </g>
+  <rect x="130" y="140" width="1140" height="620" rx="32" fill="none" stroke="#c9a14a" stroke-width="3" opacity="0.55"/>
+  <text x="700" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#9b7b56" opacity="0.8">
+    Loom Craft Studio
+  </text>
+</svg>

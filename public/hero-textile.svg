@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7efe4"/>
+      <stop offset="100%" stop-color="#e7dbc7"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d1c7b8"/>
+      <stop offset="100%" stop-color="#b9ad9c"/>
+    </linearGradient>
+    <linearGradient id="fabric" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d8c3a8"/>
+      <stop offset="100%" stop-color="#c0a88a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect x="160" y="160" width="1080" height="580" rx="28" fill="#fdf8f1" stroke="#e4d8c5" stroke-width="6"/>
+  <rect x="210" y="230" width="980" height="260" rx="16" fill="url(#fabric)"/>
+  <g stroke="#b79b78" stroke-width="4" opacity="0.55">
+    <line x1="230" y1="255" x2="1180" y2="255"/>
+    <line x1="230" y1="290" x2="1180" y2="290"/>
+    <line x1="230" y1="325" x2="1180" y2="325"/>
+    <line x1="230" y1="360" x2="1180" y2="360"/>
+    <line x1="230" y1="395" x2="1180" y2="395"/>
+    <line x1="230" y1="430" x2="1180" y2="430"/>
+  </g>
+  <rect x="210" y="520" width="980" height="100" rx="12" fill="url(#metal)"/>
+  <rect x="260" y="540" width="120" height="60" rx="8" fill="#b69e84"/>
+  <rect x="1020" y="540" width="120" height="60" rx="8" fill="#b69e84"/>
+  <rect x="300" y="640" width="800" height="50" rx="12" fill="#d7c5ad"/>
+  <g fill="#b59b7d" opacity="0.9">
+    <rect x="320" y="660" width="40" height="10" rx="5"/>
+    <rect x="400" y="660" width="40" height="10" rx="5"/>
+    <rect x="480" y="660" width="40" height="10" rx="5"/>
+    <rect x="560" y="660" width="40" height="10" rx="5"/>
+    <rect x="640" y="660" width="40" height="10" rx="5"/>
+    <rect x="720" y="660" width="40" height="10" rx="5"/>
+    <rect x="800" y="660" width="40" height="10" rx="5"/>
+    <rect x="880" y="660" width="40" height="10" rx="5"/>
+    <rect x="960" y="660" width="40" height="10" rx="5"/>
+  </g>
+  <rect x="140" y="140" width="1120" height="620" rx="34" fill="none" stroke="#c9a14a" stroke-width="3" opacity="0.55"/>
+  <text x="700" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#9b7b56" opacity="0.8">
+    Textile Weaving Machine
+  </text>
+</svg>
