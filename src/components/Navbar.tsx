@@ -10,7 +10,7 @@ export default function Navbar() {
     <header className="site-header">
       <div className="container nav">
         <Link className="brand" href="/" onClick={() => setIsOpen(false)}>
-          <span className="brand-title">Bhaskara</span>
+          <span className="brand-title">BHASKARA</span>
           <span className="brand-subtitle">
             <span>Silks</span>
           </span>
@@ -38,7 +38,7 @@ export default function Navbar() {
               href="/"
               onClick={() => setIsOpen(false)}
             >
-              <span className="brand-title">Bhaskara</span>
+              <span className="brand-title">BHASKARA</span>
               <span className="brand-subtitle">
                 <span>Silks</span>
               </span>

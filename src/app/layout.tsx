@@ -39,7 +39,7 @@ const cinzel = Cinzel({
 
 export const metadata: Metadata = {
   title: "Bhaskara Silks",
-  description: "A simple Next.js SPA with multiple pages.",
+  description: "Bhaskara Saree Manufacturers.",
 };
 
 export default function RootLayout({

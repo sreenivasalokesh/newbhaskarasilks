@@ -50,7 +50,7 @@ img {
 }
 
 .container {
-  width: min(1100px, 100% - 2rem);
+  width: min(1150px, 100% - 2rem);
   margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@ img {
 
 .brand {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.15rem;
   letter-spacing: 0.02em;
   font-family: var(--font-amita), "Times New Roman", serif;
   display: inline-flex;
@@ -120,7 +120,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.97rem;
   letter-spacing: 0.3em;
   font-weight: 500;
   line-height: 1;
@@ -235,7 +235,7 @@ img {
 .hero-full {
   position: relative;
   min-height: calc(100vh - 120px);
-  margin-top: 1rem;
+  margin-top: 0.15rem;
   display: grid;
   align-items: center;
   border-radius: 8px;
@@ -354,10 +354,56 @@ img {
   white-space: nowrap;
 }
 
-.home-sections {
-  margin-top: 3rem;
+.expertise-row {
+  margin-top: 4.0rem;
   display: grid;
-  gap: 1.75rem;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.expertise-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  /* background: var(--card); */
+  /* border: 1px solid var(--border); */
+  /* border-radius: 16px; */
+  /* padding: 1.2rem; */
+  /* box-shadow: 0 10px 24px rgba(59, 47, 42, 0.06); */
+}
+
+.expertise-image {
+  width: 82px;
+  height: 82px;
+  /* border-radius: 12px; */
+  object-fit: cover;
+  /* border: 1px solid var(--border);
+  background: #fffdf9; */
+}
+
+.expertise-text h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.expertise-text p {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 720px) {
+  .expertise-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+.home-sections {
+  margin-top: 4.0rem;
+  display: grid;
+  gap: 2.75rem;
   grid-template-columns: 1fr;
 }
 
@@ -404,13 +450,13 @@ img {
 .section-media.gallery {
   background-image:
     linear-gradient(120deg, rgba(20, 16, 12, 0.25), rgba(20, 16, 12, 0.05)),
-    url("https://images.pexels.com/photos/6634744/pexels-photo-6634744.jpeg");
+    url("https://images.pexels.com/photos/3794805/pexels-photo-3794805.jpeg");
 }
 
 .section-media.contact {
   background-image:
     linear-gradient(120deg, rgba(20, 16, 12, 0.3), rgba(20, 16, 12, 0.08)),
-    url("https://images.pexels.com/photos/6634744/pexels-photo-6634744.jpeg");
+    url("https://images.pexels.com/photos/17061968/pexels-photo-17061968.jpeg");
 }
 
 .section-content {
