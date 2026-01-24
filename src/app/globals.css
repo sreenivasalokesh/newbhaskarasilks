@@ -55,8 +55,10 @@ img {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background:  rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid var(--border);
   z-index: 10;
@@ -227,12 +229,13 @@ img {
 }
 
 .page {
-  padding: 2.5rem 0 4rem;
+  padding: 9rem 0 4rem;
 }
 
 .hero-full {
   position: relative;
   min-height: calc(100vh - 120px);
+  margin-top: 1rem;
   display: grid;
   align-items: center;
   border-radius: 24px;
@@ -643,11 +646,12 @@ img {
   }
 
   .page {
-    padding: 2rem 0 3rem;
+    padding: 7.5rem 0 3rem;
   }
 
   .hero-full {
     min-height: 70vh;
+    margin-top: 0.75rem;
   }
 
   .hero-overlay-box {
