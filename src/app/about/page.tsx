@@ -7,7 +7,13 @@ import worker from "@/assets/worker.png";
 export default function AboutPage() {
   return (
     <section className="stack">
-      
+<div>
+        <p className="eyebrow">About</p>
+        <h1>We build focused experiences.</h1>
+        <p className="lead">
+        Our association is built to deliver lasting value to our customers.
+        </p>
+      </div>      
       <div className="card about-card">
         <Image
           src={worker}
