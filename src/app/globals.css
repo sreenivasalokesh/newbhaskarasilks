@@ -1071,6 +1071,7 @@ img {
   transition: transform 0.25s ease;
   /* box-shadow: 12px 0 30px rgba(59, 47, 42, 0.2); */
   align-content: start;
+  z-index: 1;
 }
 
 .nav-drawer.open .nav-panel {
@@ -1121,6 +1122,7 @@ img {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
+  z-index: 0;
 }
 
 .nav-drawer.open .nav-backdrop {
