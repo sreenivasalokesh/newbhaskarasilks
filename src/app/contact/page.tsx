@@ -17,7 +17,7 @@ type FormErrors = {
 const initialForm: FormState = {
   name: "",
   email: "",
-  message: "",
+  message: "", 
 };
 
 export default function ContactPage() {
