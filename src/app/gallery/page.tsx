@@ -88,7 +88,6 @@ export default function GalleryPage() {
   );
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [zoom, setZoom] = useState(1);
 
   useEffect(() => {
     if (activeIndex === null) {
@@ -101,9 +100,6 @@ export default function GalleryPage() {
     };
   }, [activeIndex]);
 
-  useEffect(() => {
-    setZoom(1);
-  }, [activeIndex]);
 
   const goPrev = () => {
     if (activeIndex === null) return;
@@ -173,11 +169,7 @@ export default function GalleryPage() {
           </button>
           <div className="gallery-viewer">
             {activeItem.type === "image" ? (
-              <img
-                src={activeItem.src}
-                alt={activeItem.title}
-                style={{ transform: `scale(${zoom})` }}
-              />
+              <img src={activeItem.src} alt={activeItem.title} />
             ) : (
               <video src={activeItem.src} controls autoPlay />
             )}
@@ -192,29 +184,6 @@ export default function GalleryPage() {
           </button>
           <div className="gallery-toolbar">
             <span>{activeItem.title}</span>
-            <div className="gallery-zoom">
-              <button
-                type="button"
-                onClick={() => setZoom((z) => Math.max(1, z - 0.2))}
-                aria-label="Zoom out"
-              >
-                −
-              </button>
-              <button
-                type="button"
-                onClick={() => setZoom(1)}
-                aria-label="Reset zoom"
-              >
-                100%
-              </button>
-              <button
-                type="button"
-                onClick={() => setZoom((z) => Math.min(3, z + 0.2))}
-                aria-label="Zoom in"
-              >
-                +
-              </button>
-            </div>
           </div>
         </div>
       )}
