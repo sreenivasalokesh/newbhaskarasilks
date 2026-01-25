@@ -93,7 +93,7 @@ export default function RootLayout({
         </footer>
         <a
           className="whatsapp-fab"
-          href="https://wa.me/8088727273"
+          href="https://wa.me/918088727273"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat with Bhaskara Silks on WhatsApp"

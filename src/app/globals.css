@@ -916,6 +916,16 @@ img {
   color: var(--foreground);
 }
 
+.contact-item a {
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.contact-item a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-color: rgba(139, 107, 79, 0.6);
+}
+
 .contact-icon {
   width: 28px;
   height: 28px;
@@ -977,6 +987,15 @@ img {
   background: var(--card);
   color: var(--foreground);
   font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.contact-socials a:hover {
+  color: var(--primary);
+  border-color: rgba(139, 107, 79, 0.45);
+  box-shadow: 0 10px 20px rgba(59, 47, 42, 0.12);
+  transform: translateY(-1px);
 }
 
 .contact-socials .social-icon {
@@ -992,6 +1011,12 @@ img {
   width: 18px;
   height: 18px;
   fill: var(--primary);
+  transition: transform 0.15s ease, fill 0.15s ease;
+}
+
+.contact-socials .social-icon:hover svg {
+  fill: var(--primary-dark);
+  transform: scale(1.05);
 }
 
 @media (max-width: 720px) {
