@@ -306,6 +306,12 @@ img {
   backdrop-filter: blur(6px);
 }
 
+@media (max-width: 720px) {
+  .hero-dots {
+    bottom: 8px;
+  }
+}
+
 .hero-dot {
   width: 10px;
   height: 10px;
@@ -1047,9 +1053,20 @@ img {
   }
 
   .hero-overlay-box {
-    margin: 1rem auto 1.5rem;
+    /* margin: 0 auto 1.25rem; */
     padding: 0.85rem 1rem;
     max-width: 280px;
+    justify-self: center;
+    /* align-self: end; */
+    margin-top: 6rem;
+  }
+
+  .hero-overlay-box.right {
+    /* margin: 0 auto; */
+  }
+
+  .hero-overlay-box .lead {
+    /* display: none; */
   }
 
   .hero-overlay-box h1 {
