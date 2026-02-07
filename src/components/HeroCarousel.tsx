@@ -49,7 +49,7 @@ export default function HeroCarousel() {
       ))}
       <div className="hero-overlay-box right">
         <h1>{activeSlide.title}</h1>
-        <p className="lead">{activeSlide.message}</p>
+        <p className="hero-lead">{activeSlide.message}</p>
         <div className="actions">
           <a className="button primary" href="/gallery">
             View Gallery
