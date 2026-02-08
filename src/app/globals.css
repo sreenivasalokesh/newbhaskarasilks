@@ -235,7 +235,7 @@ img {
 .hero-full {
   position: relative;
   min-height: calc(100vh - 120px);
-  margin-top: 0.15rem;
+  /* margin-top: 0.15rem; */
   display: grid;
   align-items: center;
   /* border-radius: 8px; */
